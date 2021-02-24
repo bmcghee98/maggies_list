@@ -17,6 +17,14 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.PopMe" />
         <activity
+            android:name=".AlbumActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity
+            android:name=".FullscreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity
             android:name=".SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>

@@ -57,7 +57,6 @@
         android:layout_height="81dp"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:text="ADD LIST"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,31 +75,61 @@
 
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/jokeButton"
-        android:layout_width="305dp"
-        android:layout_height="81dp"
+        android:layout_width="106dp"
+        android:layout_height="105dp"
         app:layout_constraintBottom_toTopOf="@+id/listPrompt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/loveButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.636">
+        app:layout_constraintVertical_bias="0.808">
 
-        <TextView
-            android:id="@+id/jokeText"
+
+        <ImageView
+            android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:text="@string/tell_a_joke"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.048" />
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_laugh_svg" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/loveButton"
+        android:layout_width="106dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toTopOf="@+id/listPrompt"
+        app:layout_constraintEnd_toStartOf="@+id/jokeButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/albumButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808">
 
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_heart_svg" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/albumButton"
+        android:layout_width="106dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toTopOf="@+id/listPrompt"
+        app:layout_constraintEnd_toStartOf="@+id/loveButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_flower_pot" />
     </soup.neumorphism.NeumorphCardView>
 
     <TextView
@@ -109,7 +138,6 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:gravity="center|center_vertical"
-        android:text="Welcome!"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

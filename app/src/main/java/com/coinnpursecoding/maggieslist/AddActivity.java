@@ -57,10 +57,10 @@ public class AddActivity extends MainActivity {
                 listName = titleText.getText().toString();
                 if (listName.equals("")) {
                     Toast.makeText(AddActivity.this,
-                            "You forgot to add a title.", Toast.LENGTH_SHORT).show();
+                            "You forgot to add a title, " + MainActivity.generateName(), Toast.LENGTH_SHORT).show();
                 } else if (dbHandler.findList(listName)) {
                     Toast.makeText(AddActivity.this,
-                            "That list already exists. Try a different name?", Toast.LENGTH_SHORT).show();
+                            "That list already exists " + MainActivity.generateName() + ". Try a different name?", Toast.LENGTH_SHORT).show();
                 } else {
                     String multiLines = listText.getText().toString();
                     String nameOfList = listName;

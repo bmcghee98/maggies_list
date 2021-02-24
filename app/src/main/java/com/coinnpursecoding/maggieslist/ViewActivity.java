@@ -74,10 +74,10 @@ public class ViewActivity extends MainActivity {
                 String title = title2.getText().toString();
                 if (text.equals("")){
                     Toast.makeText(ViewActivity.this,
-                            "The list is empty.", Toast.LENGTH_SHORT).show();
+                            "The list is empty, " + MainActivity.generateName(), Toast.LENGTH_SHORT).show();
                 } else if (title.equals("")){
                     Toast.makeText(ViewActivity.this,
-                            "You forgot to add a title.", Toast.LENGTH_SHORT).show();
+                            "You forgot to add a title, " + MainActivity.generateName(), Toast.LENGTH_SHORT).show();
                 } else if (!text.equals(listValues) || !title.equals(listName)){
                     boolean success = db.removeData(listName);
                     // Removes entry from ListView
@@ -105,7 +105,7 @@ public class ViewActivity extends MainActivity {
             public void onClick(View v) {
                 new AlertDialog.Builder(ViewActivity.this, R.style.AlertDialogTheme)
                         //.setIcon(R.drawable.)
-                        .setTitle("Hold on ...")
+                        .setTitle("Hold on, " + MainActivity.generateName() + "...")
                         .setMessage("Are you sure you want to delete this list?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override

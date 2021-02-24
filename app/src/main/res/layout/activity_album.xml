@@ -137,7 +137,7 @@
         android:layout_height="63dp"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:text="@string/my_favorite_photos_of_us_ni_can_t_wait_to_add_more"
+        android:text="@string/my_favorite_photos_of_us_n_i_can_t_wait_to_add_more"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

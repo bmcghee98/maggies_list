@@ -29,14 +29,18 @@ public class MainActivity extends AppCompatActivity {
 
     public String greetingStr;
 
+    public static String[] arrayOfNames;
     public String[] arrayOfJokes;
     public String[] arrayOfLove;
-    public static ArrayList<String> list = new ArrayList<String>();
+    public static ArrayList<String> list = new ArrayList<>();
     mySQLiteDBHandler myDBH;
 
     public static String data;
 
 
+    public static String generateName(){
+        return arrayOfNames[new Random().nextInt(arrayOfNames.length)];
+    }
 
     public boolean AddData(String listName, String listText){
             return myDBH.addData(listName, listText);
@@ -50,11 +54,19 @@ public class MainActivity extends AppCompatActivity {
         herLists = (NeumorphCardView) findViewById(R.id.cardView);
         jokeBtn = (NeumorphCardView) findViewById(R.id.jokeButton);
         addBtn = (NeumorphCardView) findViewById(R.id.addButton);
+        greeting = (TextView) findViewById(R.id.greetingView);
+        albumBtn =  (NeumorphCardView) findViewById(R.id.albumButton);
+        loveBtn = (NeumorphCardView) findViewById(R.id.loveButton);
 
         myListView = (ListView) findViewById(R.id.listView);
         emptyPrompt = (TextView) findViewById(R.id.emptyText);
 
         myDBH = new mySQLiteDBHandler(this);
+
+        arrayOfNames = this.getResources().getStringArray(R.array.nameArray);
+
+        String greetingStr = "Welcome, " + generateName();
+        greeting.setText(greetingStr);
 
         if(myDBH.getDatabaseSize() == 0){
            emptyPrompt.setVisibility(View.VISIBLE);
@@ -83,8 +95,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        arrayOfLove = this.getResources().getStringArray(R.array.loveArray);
         arrayOfJokes = this.getResources().getStringArray(R.array.jokeArray);
 
+        loveBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String randomString = arrayOfLove[new Random().nextInt(arrayOfLove.length)];
+                Toast toast = Toast.makeText(MainActivity.this, randomString, Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER|Gravity.BOTTOM, 0, 50);
+                toast.show();
+            }
+        });
 
         jokeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,9 +126,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        albumBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, AlbumActivity .class);
+                startActivity(i);
+            }
+        });
+
         emptyPrompt.setText(getResources().getString((R.string.list_is_empty)));
-
-
     }
 
     @Override
