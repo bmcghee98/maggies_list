@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="jokeArray">
+    <item name="str1">What do you call a boomerang that won\'t come back?\nA stick!</item>
+    <item name="str2">How does a cucumber become a pickle?\nIt goes through a jarring experience.</item>
+    <item name="str3">What did one toilet say to the other?\nYou look a bit flushed.</item>
+    <item name="str4">What building in your town has the most stories?\nThe public library</item>
+    <item name="str5">What is a computer\'s favorite snack?\nComputer chips</item>
+    <item name="str6">How are dentures like stars?\nThey come out at night.</item>
+    <item name="str7">What did one volcano say to the other?\n I lava you.</item>
+    <item name="str8">How do we know that the ocean is friendly?\nIt waves.</item>
+    <item name="str9">What falls in winter but never gets hurt?\nSnow</item>
+    <item name="str10">What is brown, hairy and wears sunglasses?\nA coconut on vacation</item>
+    <item name="str11">What do you get from a pampered cow?\nSpoiled milk</item>
+    <item name="str12">Why are fish so smart?\nBecause they live in schools.</item>
+    <item name="str13">Why do fish live in salt water?\nBecause pepper makes them sneeze.</item>
+    <item name="str14">What\'s a cat\'s favorite magazine?\nA cat-alogue</item>
+    <item name="str15">What kind of tree fits in your hand?\nA palm tree</item>
+    </string-array>
+</resources>
