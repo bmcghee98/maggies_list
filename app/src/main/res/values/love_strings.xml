@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="loveArray">
+        <item name="str1">You make me feel like I am alive.</item>
+        <item name="str2">You are insightful and wise; you see the best in people.</item>
+        <item name="str3">You make me the happiest person on the entire planet.</item>
+        <item name="str4">I love the way that you love me.</item>
+        <item name="str5">You have a strong and radiant personality.</item>
+        <item name="str6">You are my reason to get up every morning.</item>
+        <item name="str7">You have a smile more valuable than diamonds.</item>
+        <item name="str8">You are an amazing cat mom and so incredibly patient.</item>
+        <item name="str9">You are smart and so capable of anything you pursue.</item>
+        <item name="str10">Words cannot express just how much I love you.</item>
+        <item name="str11">You are my favorite face to see in the morning.</item>
+        <item name="str12">I pray that you will be my wife one day.</item>
+        <item name="str13">You are my soulmate and best friend.</item>
+        <item name="str14">If you are feeling bad today… know that I love everything about you.</item>
+        <item name="str15">I miss you more than anything baby.</item>
+        <item name="str16">I promise to love and cherish you forever.</item>
+        <item name="str17">Thank you for making me a better person.</item>
+        <item name="str18">I love the way your hair rests on your shoulders.</item>
+        <item name="str19">Your smile can make my heart skip a beat.</item>
+        <item name="str20">I think you are way cooler than Indiana Jones.</item>
+        <item name="str21">You have amazing taste in music.</item>
+        <item name="str22">You are all I can think about at 12:15 AM (right now).</item>
+        <item name="str23">I am so in love with you.</item>
+        <item name="str24">I love your mind; you inspire me everyday with your intellect.</item>
+        <item name="str25">It is the greatest honor to call you mine.</item>
+    </string-array>
+</resources>

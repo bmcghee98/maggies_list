@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nameArray">
+        <item name="str1">honey</item>
+        <item name="str2">sweetheart</item>
+        <item name="str3">gorgeous</item>
+        <item name="str4">maggieboop</item>
+        <item name="str5">muffin</item>
+        <item name="str6">sweetie</item>
+        <item name="str7">bean</item>
+        <item name="str8">precious</item>
+        <item name="str9">angel</item>
+        <item name="str10">baby bean</item>
+        <item name="str10">baby</item>
+        <item name="str11">queen</item>
+        <item name="str12">nuggie</item>
+        <item name="str13">boo</item>
+        <item name="str14">cutie</item>
+        <item name="str15">mama</item>
+    </string-array>
+</resources>
